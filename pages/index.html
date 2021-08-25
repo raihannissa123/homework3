@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+        <link rel="stylesheet" href="../src/index.css">
+
+		<title>Temperature</title>
+	</head>
+	<body>
+		<form class="text-center border border-light p-5">
+			<div class="h4 mb-4" id="date-part"></div>
+        	<div class="h4 mb-4" id="time-part"></div>
+			<h1>Temperature Convertion </h1>
+		</form>
+		<div class="sect">
+				<section class="wrapper">
+                <h2>Select Unit</h2>
+				<select onchange="onChange('from'); calculate()" id="selectFrom">
+					<option value="Celcius">Celcius</option>
+					<option value="Fahrenheit">Fahrenheit</option>
+					<option value="Reamur">Reamur</option>
+				</select>
+				<span class="toText">to</span>
+				<select onchange="onChange('to'); calculate()" id="selectTo">
+					<option value="Celcius">Celcius</option>
+					<option value="Fahrenheit">Fahrenheit</option>
+					<option value="Reamur">Reamur</option>
+				</select>
+           		 <h2>Enter Temperature</h2>
+				<input type="text" id="from" onchange="calculate()"><br>
+                <h2>Result Temperature</h2>
+                <input type="text" id="to">
+				</section>
+			<br>
+			<section>
+				<p id="results"></p>
+			</section>
+        <script src="../scripts/index.js"></script>
+		
+		<div class="background">
+			<label> Change Background:</label>
+			<input class="form-control" id="color">
+			<button type="button" class="btn" onclick="change()">Change</button>
+		</div>
+	</div>
+</body>
+</html>
