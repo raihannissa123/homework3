@@ -1,0 +1,17 @@
+{
+  "name": "homework3",
+  "description": "Temperature Conversion some unit",
+  "main": "Conversion.js",
+
+  "scripts": {
+    "test": "jest"
+  },
+
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
+  "version": "1.0.0",
+  "directories": {
+    "test": "test"
+  }
+}
